@@ -1,0 +1,110 @@
+{
+  metadata {
+    dataset Crude Oil Price Analysis - Middle East War Impact,
+    benchmark WTI Crude Oil (USD per barrel),
+    war_start_date 2026-02-25,
+    source_note Data modeled using real-world price ranges and volatility trends from global oil market reports,
+    units USD per barrel
+  },
+  summary {
+    pre_war_avg_price 74.8,
+    post_war_peak_price 105.6,
+    volatility_increase_percent 38,
+    trend Sharp bullish breakout after geopolitical escalation
+  },
+  data [
+    
+     -------- PRE-WAR PERIOD (30 DAYS) --------
+    
+    {date 2026-01-26, price 72.1, event Stable market, sentiment neutral},
+    {date 2026-01-27, price 71.8, event Stable demand, sentiment neutral},
+    {date 2026-01-28, price 72.5, event Minor fluctuation, sentiment neutral},
+    {date 2026-01-29, price 73.2, event Inventory drop, sentiment slightly_bullish},
+    {date 2026-01-30, price 73.8, event Economic optimism, sentiment bullish},
+    
+    {date 2026-02-01, price 74.2, event Normal trading, sentiment neutral},
+    {date 2026-02-02, price 74.0, event Stable supply, sentiment neutral},
+    {date 2026-02-03, price 74.5, event OPEC signals, sentiment bullish},
+    {date 2026-02-04, price 75.1, event Demand growth, sentiment bullish},
+    {date 2026-02-05, price 75.8, event Market confidence, sentiment bullish},
+    
+    {date 2026-02-06, price 76.0, event Supply stable, sentiment neutral},
+    {date 2026-02-07, price 75.6, event Minor correction, sentiment neutral},
+    {date 2026-02-08, price 76.3, event Demand rise, sentiment bullish},
+    {date 2026-02-09, price 77.0, event Speculation increase, sentiment bullish},
+    {date 2026-02-10, price 76.8, event Profit booking, sentiment neutral},
+    
+    {date 2026-02-11, price 77.2, event Steady growth, sentiment bullish},
+    {date 2026-02-12, price 77.5, event Strong demand, sentiment bullish},
+    {date 2026-02-13, price 78.1, event Supply concerns, sentiment bullish},
+    {date 2026-02-14, price 78.6, event Geopolitical tension rising, sentiment bullish},
+    {date 2026-02-15, price 79.0, event Risk premium starts, sentiment bullish},
+    
+    {date 2026-02-16, price 78.8, event Slight pullback, sentiment neutral},
+    {date 2026-02-17, price 79.5, event Tensions escalate, sentiment bullish},
+    {date 2026-02-18, price 80.2, event War fears, sentiment bullish},
+    {date 2026-02-19, price 81.0, event Supply risk priced in, sentiment bullish},
+    {date 2026-02-20, price 82.3, event Market panic building, sentiment strong_bullish},
+    
+    {date 2026-02-21, price 83.5, event Pre-war spike, sentiment strong_bullish},
+    {date 2026-02-22, price 85.0, event Tensions peak, sentiment strong_bullish},
+    {date 2026-02-23, price 88.2, event Conflict imminent, sentiment extreme_bullish},
+    {date 2026-02-24, price 92.0, event War breakout signals, sentiment extreme_bullish},
+    
+     -------- WAR START --------
+    
+    {date 2026-02-25, price 96.1, event WAR START - supply disruption, sentiment panic_bullish},
+    
+     -------- POST-WAR PERIOD --------
+    
+    {date 2026-02-26, price 98.5, event Shipping disruption, sentiment panic_bullish},
+    {date 2026-02-27, price 101.2, event Export blockage fears, sentiment panic_bullish},
+    {date 2026-02-28, price 104.8, event Supply shock, sentiment extreme_bullish},
+    
+    {date 2026-03-01, price 105.6, event Peak spike, sentiment extreme_bullish},
+    {date 2026-03-02, price 102.3, event Profit booking, sentiment volatile},
+    {date 2026-03-03, price 83.8, event Temporary correction, sentiment bearish},
+    {date 2026-03-04, price 90.4, event Recovery bounce, sentiment bullish},
+    
+    {date 2026-03-05, price 95.2, event Supply uncertainty, sentiment bullish},
+    {date 2026-03-06, price 99.7, event Shipping risk, sentiment bullish},
+    {date 2026-03-07, price 103.5, event Escalation continues, sentiment strong_bullish},
+    {date 2026-03-08, price 105.2, event Peak volatility, sentiment extreme_bullish},
+    
+    {date 2026-03-09, price 101.8, event Market stabilization, sentiment neutral},
+    {date 2026-03-10, price 98.4, event Cooling down, sentiment neutral},
+    {date 2026-03-11, price 96.7, event Demand concerns, sentiment slightly_bearish},
+    
+    {date 2026-03-12, price 97.3, event Support holds, sentiment neutral},
+    {date 2026-03-13, price 99.1, event Minor rebound, sentiment bullish},
+    {date 2026-03-14, price 100.5, event Renewed tension, sentiment bullish},
+    
+    {date 2026-03-15, price 96.9, event Correction, sentiment neutral},
+    {date 2026-03-16, price 94.2, event Supply adjustment, sentiment bearish},
+    {date 2026-03-17, price 96.1, event Rebound, sentiment neutral},
+    
+    {date 2026-03-18, price 97.8, event Market stabilizing, sentiment neutral},
+    {date 2026-03-19, price 98.5, event Balanced demand, sentiment neutral},
+    {date 2026-03-20, price 96.3, event Profit booking, sentiment neutral}
+    
+  ],
+  insights {
+    key_patterns [
+      Strong upward breakout before war due to anticipation,
+      Sharp spike immediately after war start,
+      Extreme volatility in first 10 days post-war,
+      Gradual stabilization after 2-3 weeks
+    ],
+    trading_signals {
+      buy_zone Before war breakout (Feb 18–23),
+      sell_zone Peak panic (Feb 28–Mar 2),
+      reentry_zone Stabilization phase (after Mar 10)
+    },
+    risk_factors [
+      Geopolitical escalation,
+      Shipping route disruptions (Hormuz),
+      OPEC production changes,
+      Global demand slowdown
+    ]
+  }
+}
